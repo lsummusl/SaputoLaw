@@ -8,14 +8,16 @@ Retrieved 15 October 2026.
 - LinkedIn company: https://www.linkedin.com/company/saputo-toufexis/
 - Paul Saputo: https://www.linkedin.com/in/paulsaputo
 
-## Facebook cover
+## Hero photograph
 
-- Photo page: https://www.facebook.com/photo/?fbid=747578080110000&set=a.606307764237033
-- Local theme asset: `assets/images/facebook-cover.png`
+The Facebook cover is the same flags photograph already stored in the firm’s WordPress library:
+
+- Live original: https://saputo.law/wp-content/uploads/2022/12/Large-Texas-and-United-States-Flags-scaled.jpg
+- Facebook cover: https://www.facebook.com/photo/?fbid=747578080110000&set=a.606307764237033
+- Local theme asset: `assets/images/source/Large-Texas-and-United-States-Flags-scaled.jpg`
 - Description: Texas and United States flags on a flagpole
-- Retrieved: 15 October 2026
 
-The cover is used on the right side of the homepage hero with a navy gradient protecting the text area. Confirm continued permission to reuse the social asset before production launch.
+The current live homepage hero uses partner portraits. This flags image is the original source for the Facebook cover and is used across firm social and library assets. The redesigned homepage uses the original site file on the right side of the hero, with a navy gradient protecting the text.
 
 ## LinkedIn company wording
 

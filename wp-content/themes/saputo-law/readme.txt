@@ -1,6 +1,6 @@
 === Saputo Law ===
 
-Version: 0.5.0
+Version: 0.5.1
 
 A custom block theme for the Saputo Law proof of concept.
 
@@ -32,7 +32,7 @@ The package includes selected attorney photographs and current recognition marks
 
 Facebook and LinkedIn links are included in the footer.
 
-The homepage hero uses the firm's Facebook cover photograph. Confirm continued permission to reuse the social asset before production launch.
+The homepage hero uses the firm’s original Texas and United States flags photograph from saputo.law, the same image used as the Facebook cover. Confirm continued permission before production launch.
 
 == Color system ==
 

@@ -138,6 +138,11 @@ $featuredAssets = @(
 		sourceUrl = "$Source/wp-content/uploads/2026/09/Texas-Super-Lawyers-2026.webp"
 		alt       = "Texas Super Lawyers 2026 recognition"
 		usedOn    = "$Source/"
+	},
+	[pscustomobject]@{
+		sourceUrl = "$Source/wp-content/uploads/2022/12/Large-Texas-and-United-States-Flags-scaled.jpg"
+		alt       = "Texas and United States flags"
+		usedOn    = "$Source/"
 	}
 )
 
