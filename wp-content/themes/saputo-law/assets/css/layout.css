@@ -1,0 +1,11 @@
+/*
+ * Keep the site shell flush while preserving block spacing inside each region.
+ * WordPress applies the global block gap between all direct .wp-site-blocks
+ * children, including the header, main content, and footer template parts.
+ */
+.wp-site-blocks > header,
+.wp-site-blocks > main,
+.wp-site-blocks > footer {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}

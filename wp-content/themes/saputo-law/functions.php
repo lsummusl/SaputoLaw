@@ -18,6 +18,12 @@ add_action(
 			array(),
 			wp_get_theme()->get('Version')
 		);
+		wp_enqueue_style(
+			'saputo-law-layout',
+			get_theme_file_uri('assets/css/layout.css'),
+			array('saputo-law'),
+			(string) filemtime(get_theme_file_path('assets/css/layout.css'))
+		);
 	}
 );
 
