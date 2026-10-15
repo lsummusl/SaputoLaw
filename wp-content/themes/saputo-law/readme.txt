@@ -1,6 +1,6 @@
 === Saputo Law ===
 
-Version: 0.4.0
+Version: 0.4.1
 
 A custom block theme for the Saputo Law proof of concept.
 

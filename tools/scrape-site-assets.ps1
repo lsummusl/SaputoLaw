@@ -118,6 +118,26 @@ $featuredAssets = @(
 		sourceUrl = "$Source/wp-content/uploads/2025/03/Nicholas-Toufexis-Paul-Saputo-10.webp"
 		alt       = "Nicholas Toufexis and Paul Saputo"
 		usedOn    = "$Source/"
+	},
+	[pscustomobject]@{
+		sourceUrl = "$Source/wp-content/uploads/2025/09/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-Badge.webp"
+		alt       = "Martindale-Hubbell AV Preeminent 2026 recognition for Paul Saputo"
+		usedOn    = "$Source/"
+	},
+	[pscustomobject]@{
+		sourceUrl = "$Source/wp-content/uploads/2026/09/d-mag-2026-dark-full-size.webp"
+		alt       = "D Magazine Best Lawyers in Dallas 2026 recognition"
+		usedOn    = "$Source/"
+	},
+	[pscustomobject]@{
+		sourceUrl = "$Source/wp-content/uploads/2026/09/Ones-To-Watch-Lawyer-Logo-Nicholas-Toufexis-2026-scaled.webp"
+		alt       = "Best Lawyers Ones to Watch 2026 recognition for Nicholas Toufexis"
+		usedOn    = "$Source/"
+	},
+	[pscustomobject]@{
+		sourceUrl = "$Source/wp-content/uploads/2026/09/Texas-Super-Lawyers-2026.webp"
+		alt       = "Texas Super Lawyers 2026 recognition"
+		usedOn    = "$Source/"
 	}
 )
 
