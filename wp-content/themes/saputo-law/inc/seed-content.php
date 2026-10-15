@@ -67,6 +67,7 @@ function saputo_law_seed_site(): void {
 <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--60)">
 	<!-- wp:column {"className":"sl-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50"}}}} -->
 	<div class="wp-block-column sl-card" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-attorney-photo"} --><figure class="wp-block-image size-full sl-attorney-photo"><img src="/wp-content/themes/saputo-law/assets/images/source/PAUL-SAPUTO-HEADSHOT.webp" alt="Paul Saputo"/></figure><!-- /wp:image -->
 		<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Founding Partner</p><!-- /wp:paragraph -->
 		<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Paul Saputo</h3><!-- /wp:heading -->
 		<!-- wp:paragraph --><p>Duke Law graduate and Texas criminal-defense attorney admitted in state courts, the Fifth Circuit, and multiple United States District Courts.</p><!-- /wp:paragraph -->
@@ -75,6 +76,7 @@ function saputo_law_seed_site(): void {
 	<!-- /wp:column -->
 	<!-- wp:column {"className":"sl-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50"}}}} -->
 	<div class="wp-block-column sl-card" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-attorney-photo"} --><figure class="wp-block-image size-full sl-attorney-photo"><img src="/wp-content/themes/saputo-law/assets/images/source/Nicks-Casual-Headshot-png.webp" alt="Nicholas Toufexis"/></figure><!-- /wp:image -->
 		<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Managing Partner</p><!-- /wp:paragraph -->
 		<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Nicholas Toufexis</h3><!-- /wp:heading -->
 		<!-- wp:paragraph --><p>SMU Dedman School of Law graduate, Navy veteran, and criminal-defense attorney admitted in Texas state and federal courts.</p><!-- /wp:paragraph -->

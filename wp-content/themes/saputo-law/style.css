@@ -3,7 +3,7 @@ Theme Name: Saputo Law
 Theme URI: https://saputolaw.thelaurensum.com
 Author: Lauren Summers
 Description: A focused block theme for Saputo Toufexis, built around clarity, authority, and fast access to counsel.
-Version: 0.3.0
+Version: 0.4.0
 Requires at least: 6.5
 Requires PHP: 8.1
 Text Domain: saputo-law
@@ -169,6 +169,37 @@ button:focus-visible {
 	font-family: var(--wp--preset--font-family--display);
 	font-size: clamp(2.4rem, 5vw, 4.5rem);
 	line-height: 1;
+}
+
+.sl-partner-photo {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 4px solid var(--wp--preset--color--brass);
+	box-shadow: var(--sl-shadow);
+}
+
+.sl-partner-photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	object-position: center top;
+	filter: saturate(0.82) contrast(1.04);
+}
+
+.sl-attorney-photo {
+	overflow: hidden;
+	margin: calc(var(--wp--preset--spacing--60) * -1) calc(var(--wp--preset--spacing--50) * -1) var(--wp--preset--spacing--50) !important;
+	border-bottom: 3px solid var(--wp--preset--color--brass);
+}
+
+.sl-attorney-photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	object-position: center 22%;
+	filter: saturate(0.86) contrast(1.04);
 }
 
 .sl-rule {
