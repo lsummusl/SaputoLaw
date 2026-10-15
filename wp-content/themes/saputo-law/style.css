@@ -1,0 +1,144 @@
+/*
+Theme Name: Saputo Law
+Theme URI: https://saputolaw.thelaurensum.com
+Author: Lauren Summers
+Description: A focused block theme for Saputo Toufexis, built around clarity, authority, and fast access to counsel.
+Version: 0.1.0
+Requires at least: 6.5
+Requires PHP: 8.1
+Text Domain: saputo-law
+*/
+
+:root {
+	--sl-shadow: 0 24px 70px rgba(7, 26, 43, 0.12);
+	--sl-rule: rgba(7, 26, 43, 0.14);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-underline-offset: 0.2em;
+}
+
+.sl-site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	backdrop-filter: blur(18px);
+}
+
+.sl-eyebrow {
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.sl-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.sl-hero::after {
+	position: absolute;
+	right: -12rem;
+	bottom: -18rem;
+	width: 42rem;
+	height: 42rem;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 50%;
+	content: "";
+	pointer-events: none;
+}
+
+.sl-hero h1 {
+	max-width: 13ch;
+	letter-spacing: -0.045em;
+}
+
+.sl-hero-copy {
+	max-width: 42rem;
+}
+
+.sl-proof-bar {
+	position: relative;
+	z-index: 2;
+	margin-top: -2.5rem !important;
+	box-shadow: var(--sl-shadow);
+}
+
+.sl-proof-item + .sl-proof-item {
+	border-left: 1px solid var(--sl-rule);
+}
+
+.sl-card {
+	height: 100%;
+	border: 1px solid var(--sl-rule);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.sl-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--sl-shadow);
+}
+
+.sl-number {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: clamp(2.4rem, 5vw, 4.5rem);
+	line-height: 1;
+}
+
+.sl-rule {
+	width: 3rem;
+	height: 3px;
+	margin-left: 0 !important;
+	border: 0;
+	background: var(--wp--preset--color--brass);
+}
+
+.sl-cta {
+	position: relative;
+	overflow: hidden;
+}
+
+.sl-cta::before {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: 6px;
+	background: var(--wp--preset--color--brass);
+	content: "";
+}
+
+.wp-element-button {
+	transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.wp-element-button:hover {
+	transform: translateY(-2px);
+}
+
+@media (max-width: 781px) {
+	.sl-site-header {
+		position: relative;
+	}
+
+	.sl-proof-bar {
+		margin-top: 0 !important;
+	}
+
+	.sl-proof-item + .sl-proof-item {
+		border-top: 1px solid var(--sl-rule);
+		border-left: 0;
+	}
+}
