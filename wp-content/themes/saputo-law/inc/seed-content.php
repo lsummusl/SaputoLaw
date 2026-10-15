@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-const SAPUTO_LAW_SEED_VERSION = '0.1.0';
+const SAPUTO_LAW_SEED_VERSION = '0.2.0';
 
 /**
  * Create one page when its slug does not already exist.
@@ -41,6 +41,50 @@ function saputo_law_seed_page(
 	);
 
 	return is_wp_error($page_id) ? 0 : (int) $page_id;
+}
+
+/**
+ * Remove only untouched WordPress starter content.
+ */
+function saputo_law_remove_sample_content(): void {
+	$defaults = array(
+		array(
+			'type'      => 'post',
+			'slug'      => 'hello-world',
+			'titles'    => array('Hello world!', 'Hello World!'),
+			'signature' => 'Welcome to WordPress. This is your first post.',
+		),
+		array(
+			'type'      => 'page',
+			'slug'      => 'sample-page',
+			'titles'    => array('Sample Page'),
+			'signature' => 'This is an example page.',
+		),
+	);
+
+	foreach ($defaults as $default) {
+		$post = get_page_by_path($default['slug'], OBJECT, $default['type']);
+
+		if (
+			$post instanceof WP_Post
+			&& in_array($post->post_title, $default['titles'], true)
+			&& str_contains(wp_strip_all_tags($post->post_content), $default['signature'])
+		) {
+			wp_delete_post((int) $post->ID, true);
+		}
+	}
+}
+
+/**
+ * Use readable, search-friendly URLs.
+ */
+function saputo_law_configure_permalinks(): void {
+	global $wp_rewrite;
+
+	$structure = '/%postname%/';
+	update_option('permalink_structure', $structure);
+	$wp_rewrite->set_permalink_structure($structure);
+	flush_rewrite_rules(false);
 }
 
 /**
@@ -195,6 +239,8 @@ BLOCKS;
 
 	update_option('blogname', 'Saputo Toufexis');
 	update_option('blogdescription', 'Texas Criminal Defense');
+	saputo_law_remove_sample_content();
+	saputo_law_configure_permalinks();
 	update_option('saputo_law_seed_version', SAPUTO_LAW_SEED_VERSION);
 	set_transient('saputo_law_seeded_notice', true, 60);
 }
@@ -209,7 +255,7 @@ function saputo_law_seeded_notice(): void {
 
 	delete_transient('saputo_law_seeded_notice');
 	echo '<div class="notice notice-success is-dismissible"><p>';
-	echo esc_html__('Saputo Law created the starter pages and configured the homepage. Existing pages were left unchanged.', 'saputo-law');
+	echo esc_html__('Saputo Law created the starter pages, configured Post name permalinks, and removed untouched WordPress sample content. Existing real content was left unchanged.', 'saputo-law');
 	echo '</p></div>';
 }
 add_action('admin_notices', 'saputo_law_seeded_notice');
