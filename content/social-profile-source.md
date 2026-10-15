@@ -8,6 +8,15 @@ Retrieved 15 October 2026.
 - LinkedIn company: https://www.linkedin.com/company/saputo-toufexis/
 - Paul Saputo: https://www.linkedin.com/in/paulsaputo
 
+## Facebook cover
+
+- Photo page: https://www.facebook.com/photo/?fbid=747578080110000&set=a.606307764237033
+- Local theme asset: `assets/images/facebook-cover.png`
+- Description: Texas and United States flags on a flagpole
+- Retrieved: 15 October 2026
+
+The cover is used on the right side of the homepage hero with a navy gradient protecting the text area. Confirm continued permission to reuse the social asset before production launch.
+
 ## LinkedIn company wording
 
 The public company profile describes Saputo Toufexis as a Dallas criminal-defense firm that fights for the rights of individuals seeking strong criminal defense.

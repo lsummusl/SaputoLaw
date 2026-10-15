@@ -1,6 +1,6 @@
 === Saputo Law ===
 
-Version: 0.4.2
+Version: 0.5.0
 
 A custom block theme for the Saputo Law proof of concept.
 
@@ -31,6 +31,8 @@ Spanish draft (held for fluent legal review)
 The package includes selected attorney photographs and current recognition marks copied from the firm's public website. Confirm permission, award-license terms, dates, and preferred crops before production launch.
 
 Facebook and LinkedIn links are included in the footer.
+
+The homepage hero uses the firm's Facebook cover photograph. Confirm continued permission to reuse the social asset before production launch.
 
 == Color system ==
 
