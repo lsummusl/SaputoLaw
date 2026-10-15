@@ -7,6 +7,8 @@
 
 declare(strict_types=1);
 
+require_once get_theme_file_path('inc/seed-content.php');
+
 add_action(
 	'wp_enqueue_scripts',
 	static function (): void {
@@ -18,6 +20,8 @@ add_action(
 		);
 	}
 );
+
+add_action('after_switch_theme', 'saputo_law_seed_site');
 
 add_action(
 	'after_setup_theme',

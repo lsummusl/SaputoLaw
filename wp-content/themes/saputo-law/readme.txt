@@ -1,6 +1,6 @@
 === Saputo Law ===
 
-Version: 0.1.0
+Version: 0.3.0
 
 A custom block theme for the Saputo Law proof of concept.
 
@@ -8,9 +8,23 @@ A custom block theme for the Saputo Law proof of concept.
 
 1. Upload the saputo-law folder to wp-content/themes, or upload a zip from Appearance > Themes.
 2. Activate Saputo Law.
-3. Set the site title to Saputo Toufexis.
-4. Create and assign a primary navigation menu.
-5. Review the consultation and practice-area links before publishing.
+3. On first activation, the theme creates the starter pages, configures the homepage and article archive, and updates the site title.
+4. Existing pages are never overwritten.
+5. Review all seeded copy, links, recognitions, case results, and disclaimers before presenting or publishing.
+6. Configure a secure contact-form provider on the Contact page.
+
+== Seeded pages ==
+
+Home
+Attorneys
+Paul Saputo
+Nicholas Toufexis
+Practice Areas
+Results
+Insights & Recognition
+Contact Us
+Articles
+Spanish draft (held for fluent legal review)
 
 == Color system ==
 
