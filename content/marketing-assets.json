@@ -1,0 +1,147 @@
+﻿{
+    "scrapedAt":  "2026-10-15T22:07:57.9947499Z",
+    "source":  "https://saputo.law",
+    "pages":  [
+                  "home",
+                  "paul-saputo",
+                  "nicholas-toufexis",
+                  "practice-areas",
+                  "press",
+                  "victories"
+              ],
+    "count":  12,
+    "assets":  [
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2024/04/2025-Best-Lawyers-Nick-Toufexis-no-borders.webp",
+                       "filename":  "2025-Best-Lawyers-Nick-Toufexis-no-borders.webp",
+                       "alt":  "Best Lawyers 2025 award badge for Nicholas Toufexis",
+                       "usedOn":  [
+                                      "https://saputo.law/about/nicholas-toufexis/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/2025-Best-Lawyers-Nick-Toufexis-no-borders.webp",
+                       "bytes":  6630,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2025/09/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-Badge.webp",
+                       "filename":  "AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-Badge.webp",
+                       "alt":  "Martindale-Hubbell AV Preeminent 2026 recognition for Paul Saputo",
+                       "usedOn":  [
+                                      "https://saputo.law/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-Badge.webp",
+                       "bytes":  18540,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2026/09/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-dark-transparent.webp",
+                       "filename":  "AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-dark-transparent.webp",
+                       "alt":  "Martindale-Hubbell AV Preeminent Rating badge featuring AV logo on left and the Martindale logo on top with 2026 stamp",
+                       "usedOn":  [
+                                      "https://saputo.law/about/paul-saputo/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-dark-transparent.webp",
+                       "bytes":  18444,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2026/09/Client-Champion-2026-140px-light.webp",
+                       "filename":  "Client-Champion-2026-140px-light.webp",
+                       "alt":  "2026 Client Champion Award for Attorney Paul Saputo rendered in light grey over transparent background",
+                       "usedOn":  [
+                                      "https://saputo.law/about/paul-saputo/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Client-Champion-2026-140px-light.webp",
+                       "bytes":  19404,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2025/03/DBA-100-Club-2024-300x263.webp",
+                       "filename":  "DBA-100-Club-2024-300x263.webp",
+                       "alt":  "Saputo Toufexis recognized as a DBA 100 Club member – a testament to top Texas Criminal Defense Lawyers.",
+                       "usedOn":  [
+                                      "https://saputo.law/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/DBA-100-Club-2024-300x263.webp",
+                       "bytes":  13232,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2026/09/d-mag-2026-dark-full-size.webp",
+                       "filename":  "d-mag-2026-dark-full-size.webp",
+                       "alt":  "Large Dallas Magazine logo with Best Lawyers 2026 text to the right in black",
+                       "usedOn":  [
+                                      "https://saputo.law/about/paul-saputo/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/d-mag-2026-dark-full-size.webp",
+                       "bytes":  15926,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2025/03/Nicholas-Toufexis-Paul-Saputo-10.webp",
+                       "filename":  "Nicholas-Toufexis-Paul-Saputo-10.webp",
+                       "alt":  "Nicholas Toufexis and Paul Saputo",
+                       "usedOn":  [
+                                      "https://saputo.law/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Nicholas-Toufexis-Paul-Saputo-10.webp",
+                       "bytes":  83516,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2024/04/Nicks-Casual-Headshot-png.webp",
+                       "filename":  "Nicks-Casual-Headshot-png.webp",
+                       "alt":  "Nick Troufexis casual headshot photo",
+                       "usedOn":  [
+                                      "https://saputo.law/about/nicholas-toufexis/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Nicks-Casual-Headshot-png.webp",
+                       "bytes":  105058,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2024/04/Nick-Toufexis-Super-Lawyers-2024-badge.webp",
+                       "filename":  "Nick-Toufexis-Super-Lawyers-2024-badge.webp",
+                       "alt":  "Nick Toufexis recognized as a 2024 Super Lawyers “Rising Star” on official badge.",
+                       "usedOn":  [
+                                      "https://saputo.law/about/nicholas-toufexis/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Nick-Toufexis-Super-Lawyers-2024-badge.webp",
+                       "bytes":  6656,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2026/09/Ones-To-Watch-Lawyer-Logo-Nicholas-Toufexis-2026-scaled.webp",
+                       "filename":  "Ones-To-Watch-Lawyer-Logo-Nicholas-Toufexis-2026-scaled.webp",
+                       "alt":  "Best Lawyers Ones to Watch 2026 recognition for Nicholas Toufexis",
+                       "usedOn":  [
+                                      "https://saputo.law/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Ones-To-Watch-Lawyer-Logo-Nicholas-Toufexis-2026-scaled.webp",
+                       "bytes":  42866,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2025/03/PAUL-SAPUTO-HEADSHOT.webp",
+                       "filename":  "PAUL-SAPUTO-HEADSHOT.webp",
+                       "alt":  "Paul Saputo smiling in professional headshot",
+                       "usedOn":  [
+                                      "https://saputo.law/about/paul-saputo/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/PAUL-SAPUTO-HEADSHOT.webp",
+                       "bytes":  139628,
+                       "error":  null
+                   },
+                   {
+                       "sourceUrl":  "https://saputo.law/wp-content/uploads/2026/09/Texas-Super-Lawyers-2026.webp",
+                       "filename":  "Texas-Super-Lawyers-2026.webp",
+                       "alt":  "Texas Super Lawyers 2026 recognition",
+                       "usedOn":  [
+                                      "https://saputo.law/"
+                                  ],
+                       "localPath":  "wp-content/themes/saputo-law/assets/images/source/Texas-Super-Lawyers-2026.webp",
+                       "bytes":  4100,
+                       "error":  null
+                   }
+               ]
+}

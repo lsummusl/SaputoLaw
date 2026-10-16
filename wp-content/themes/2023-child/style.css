@@ -1,0 +1,774 @@
+/*
+Theme Name: 2023 Child
+Template: twentytwentythree
+*/
+
+@font-face {
+font-family: Oswald Regular;
+font-weight: normal;
+}
+
+p { 
+    padding-bottom: 24px;
+}
+
+h1,h2 { 
+	font-family: "Oswald Regular", Arial, sans-serif;
+}
+
+.page-content-h2 {color:#000;font-size: 2.1em;padding: 0px 0px 17px 17px;font-style: italic;}
+
+h3 { 
+    padding-top: 70px;
+    line-height: 1em;
+    padding-bottom: 24px;
+    padding-left: 20px;
+}
+
+h3 a {
+    text-decoration: none;
+} 
+
+h4 {
+	font-family: "Oswald Regular", Arial, sans-serif;
+    font-weight: 100;
+    line-height: 1.3em;
+    letter-spacing: .02em;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 5px 15px 24px 15px;
+    position: relative;
+}
+
+blockquote p {
+	padding-bottom: 0px;
+    line-height: 1.5em;
+    padding-left: 23px;
+}
+
+blockquote:before {
+    position: relative;
+    top: -24px;
+    left: -43px;
+    content: "\201C";
+    color: #DDD;
+    font-family: serif;
+    font-size: 96px;
+	height:16px;
+	display: block;
+}
+
+blockquote.tiktok-embed:after {
+    content: ''; /* Empty content */
+    display: none; /* Hide the pseudo-element */
+}
+
+blockquote.tiktok-embed:before {
+    content: ''; /* Empty content */
+    display: none; /* Hide the pseudo-element */
+}
+
+blockquote:after {
+    display:none;
+	position: absolute;
+    bottom: -39px;
+    right: 3px;
+    content: "\201D";
+    color: #DDD;
+    font-family: serif;
+    font-size: 96px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+	margin-left: 2px;
+}
+
+sup a {
+    text-decoration: none; 
+}
+
+.cite-backlink {
+	font-size: smaller;
+    margin-right: 7px;
+	vertical-align: super;
+	line-height: 2.5em;
+}
+
+ul {padding-bottom: 24px;}
+.topnavmenu ul {padding-bottom: 0px;}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
+    margin: 10px;
+}
+
+.wp-block-cover__image-background {
+    z-index: 0;
+    background-position: 0% 49px! important;
+    background-size: auto 80vh! important;
+    background: #000;
+}
+
+.acuity-embed-button {
+	font-size: 15px;
+    right: 4%;
+    background: -moz-linear-gradient(0deg, #b01403, #ff1801);
+	background: -webkit-linear-gradient(0deg, #b01403, #ff1801);
+	background: linear-gradient(0deg, #b01403, #ff1801);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+    font-weight: bold;
+    color: #fff;
+    padding: 16px 29px;
+    border: 0px;
+    -webkit-box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2vw !important;
+    border-radius: 11px;
+    box-shadow: 2px 2px 3px #ff6b128a;
+    position:absolute;
+}
+
+.acuity-embed-button-2 {
+	font-size: 15px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+    font-weight: bold;
+    border: 0px;
+    -webkit-box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;
+    border-radius: 4px;
+    text-decoration: none;
+    border-radius: 11px;
+	box-shadow: 0px 0px 6px #ffd500! important;
+    background: -webkit-linear-gradient(206deg, rgb(240 200 34) 33%, rgb(255 193 20) 100%)! important;
+	background: -moz-linear-gradient(206deg, #F0C822, #FFC114)! important;
+	background: linear-gradient(206deg, #F0C822, #FFC114)! important;
+    color: #000! important;
+    padding: 16px 21px! important;
+    font-size: 1.1em! important;
+}
+
+
+.acuity-embed-button-3 {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+    font-weight: bold;
+    color: #000;
+    font-size: 1.6em;
+    padding: .667em 1.33em;
+    text-decoration: none;
+    box-shadow: 0px 0px 6px #ffd500! important;
+	-webkit-box-shadow: 0 -2px 0 rgb(0 0 0 / 15%) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+    background: -webkit-linear-gradient(206deg, rgb(240 200 34) 33%, rgb(255 193 20) 100%);
+    background: -moz-linear-gradient(206deg, #F0C822, #FFC114) ! important;
+    background: linear-gradient(206deg, #F0C822, #FFC114);
+    border-style: solid;
+    border: 1px;
+    border-color: #fff;
+    border-style: solid;
+	border-radius: 0px;
+
+}
+
+.acuity-embed-button:hover{
+	background: -moz-linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	background: linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+}
+
+.acuity-embed-button-2:hover{
+	color: #0d0048! important;
+    background: -webkit-linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%)! important;
+	background: linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%)! important;
+}
+
+.acuity-embed-button-3:hover{
+	color: #0d0048! important;
+    background: -webkit-linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%)! important;
+	background: linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%)! important;
+
+}
+
+.case-review-button a {
+	background: -moz-linear-gradient(0deg, rgba(38 0 226) 0%, rgba(0,0,219,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(38 0 226) 0%, rgba(0,0,219,1) 100%);
+	background: linear-gradient(0deg, rgba(38 0 226) 0%, rgb(0 0 163) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+	box-shadow: 0px 0px 6px #7a91f88a;
+	border-radius: 11px;
+}
+
+.case-review-button:hover a {
+	background: -moz-linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	background: linear-gradient(0deg, rgba(19,0,112,1) 0%, rgba(0,0,219,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130070",endColorstr="#0000db",GradientType=1);
+}
+
+.custom-title-css {
+    margin-left: 0;
+	line-height: .92em;
+	padding-top:40px;
+
+}
+
+.custom-category-css {
+    line-height: 0;
+    color: #a4a4a4! important;
+    margin-bottom: 90px;
+}
+    
+.breadcrumb-custom-css {
+    color: #fff;
+    font-size: .85em;
+    margin-bottom: 24px;
+	padding-bottom: 12px;
+    text-align: right;
+}
+
+.breadcrumb-custom-css-2 {
+    text-align: right;
+}
+
+.breadcrumb-custom-css a {
+    color: #71d6ff;
+    text-decoration: none;
+}
+
+.breadcrumb-custom-css-2 a {
+	text-decoration: none;
+}
+
+.badge-container {
+	position: absolute;
+    top: 93px;
+    width: 100%;
+    left: 0;
+}
+
+.sidebar-content {margin: auto! important;text-align:center;}
+
+#knowledge-center {
+    background: rgba(202,202,202,.2);
+    margin-bottom: 20px;
+    margin-left: 31px! important;
+    float: right;
+    max-width: 480px;
+    background: rgb(228,228,228);
+	background: -moz-linear-gradient(90deg, rgba(228,228,228,1) 0%, rgba(245,244,244,1) 64%);
+	background: -webkit-linear-gradient(90deg, rgba(228,228,228,1) 0%, rgba(245,244,244,1) 64%);
+	background: linear-gradient(90deg, rgba(228,228,228,1) 0%, rgba(245,244,244,1) 64%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4e4e4",endColorstr="#f5f4f4",GradientType=1);
+	box-shadow: 1px 3px 4px #a09e9e;
+}
+
+#knowledge-center h3 {
+   margin-bottom: 0; 
+   letter-spacing: -.03em;
+   text-indent: 0; 
+   text-align: center; 
+   color: #fff; 
+   padding: 40px 8px 20px 8px; 
+   font-weight: 300;
+   font-size: 24px;
+   margin-top: 0;
+	font-family: "Oswald Regular", Arial, sans-serif;
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 7%, rgba(59,59,59,1) 95%);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 7%, rgba(59,59,59,1) 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#3b3b3b",GradientType=1);
+}
+
+#knowledge-center h2 {
+   margin-bottom: 0; 
+   letter-spacing: -.03em;
+   text-indent: 0; 
+   text-align: center; 
+   color: #fff; 
+   padding: 40px 8px 20px 8px; 
+   font-weight: 300;
+   font-size: 24px;
+   margin-top: 0;
+	font-family: "Oswald Regular", Arial, sans-serif;
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 7%, rgba(59,59,59,1) 95%);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 7%, rgba(59,59,59,1) 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#3b3b3b",GradientType=1);
+}
+
+#knowledge-center h4 {
+    font-size: 1.2em;
+    margin-top: 4px;
+    letter-spacing: -.02em; 
+}
+
+#knowledge-center a {
+    text-decoration: none;
+}
+
+#knowledge-center li {
+    padding: 0;
+    border-bottom: 0;
+    margin-top: 4px;
+    padding: 4px 15px 4px 4px;
+}
+
+#knowledge-center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:auto;
+}
+
+#knowledge-center p {
+	padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.wp-block-navigation.wp-container-2 {
+    height: 44px;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+    border: none;
+    box-shadow: 1px 3px 3px #a4a4a4;
+    min-width:309px! important;
+    margin-top: 0px;
+    background: rgb(223,223,223);
+	background: -moz-linear-gradient(0deg, rgba(223,223,223,1) 0%, rgba(249,249,249,1) 40%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(223,223,223,1) 0%, rgba(249,249,249,1) 40%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(0deg, rgba(223,223,223,1) 0%, rgba(249,249,249,1) 40%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfdfdf",endColorstr="#ffffff",GradientType=1);
+	letter-spacing: -.02em!important;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container a {
+    padding: 5px 3px 9px 10px;
+    font-weight: 300;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container a:hover {
+    background: rgb(2 6 60 / 86%);
+    text-decoration: none;
+	color: #fff! important;
+}
+    
+.wp-block-navigation ul, .wp-block-navigation ul li, .wp-block-navigation__responsive-container-content, .wp-block-navigation__responsive-dialog, .wp-block-navigation__responsive-close, .wp-block-navigation__responsive-container  {
+	height:100%;
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+    max-width: 309px! important;
+    line-height: 1.3em;
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover {
+    background:#fff;
+	color: #000 ! important;
+}
+
+.wp-block-navigation .wp-block-navigation-item a {
+	padding: 7px 2px;
+}
+
+
+.wp-block-navigation-item-2024 a {
+	padding: 11px 4px! important;
+}
+
+.fixed-nav-2024 {
+	box-shadow: 0 1rem 1rem rgb(0 0 0 / 40%) !important;
+	z-index:9999;
+}
+
+.no-bottom-padding-2024 {
+	padding-bottom:0px! important;
+}
+
+.no-right-padding-2024 {
+	padding-right:0px! important;
+}
+
+.home-nav-header-top-2025 .wp-block-navigation .wp-block-navigation-item a:hover{
+	color:#000;
+}
+
+.footer-nav a:hover {background: #f0b100! important;}
+
+.sticky-cta-button-2024 a {
+	    box-shadow: 0px 0px 6px #8e7702;
+		background-color: #fdca40;
+}
+
+.sticky-cta-button-2024 a:hover {
+	    color: #0d0048;
+		background: -webkit-linear-gradient(2deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%);
+		background: linear-gradient(2deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%);
+}
+
+.home-middle-2025 {
+	height:52vh;
+	min-height: 380px! important;
+}
+
+.home-bottom-2024 {
+	height:20vh;
+}
+
+.container-homepage-text-2024 {
+	max-width:620px;
+}
+
+.landing-page-button-2024 a {
+	box-shadow: 0px 0px 6px #ffd500;
+	background: -webkit-linear-gradient(206deg, rgb(240 200 34) 33%, rgb(255 193 20) 100%);
+	background: linear-gradient(37deg, #f0c822 30%, #f0c822 100%);
+}
+
+.landing-page-button-2024 a:hover {
+	color: #0d0048;
+    background: -webkit-linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%);
+	background: linear-gradient(206deg, rgb(250 191 73) -38%, rgb(255 226 0) 100%);
+}
+
+.logo-top-home-2024 {
+	height:13vh;
+}
+
+.wp-block-navigation .wp-block-navigation__submenu-icon {
+	margin-left: 0;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -160px; 
+    visibility: hidden;
+}
+
+h3.anchor {
+    padding-top: 70px! important;
+    padding-bottom: 25px! important;
+    margin-bottom: 12px! important;
+}
+
+p.anchor {
+    padding-top: 55px;
+}
+
+.justia-css {
+    max-width: 70%;
+    padding-top: 30px;
+    padding-bottom:40px;
+}
+
+.recent-posts li {
+	padding-bottom: 0.4em;
+    padding-left: 0.5em;
+    padding-top: 0.6em;
+}
+
+.recent-posts a {text-decoration: none;color:#21759B;}
+.practice-areas a {text-decoration: none;}
+
+   
+.fixed-cta {
+	position:fixed;
+	bottom:0;
+	background: rgb(245,244,244);
+	background: -moz-linear-gradient(218deg, rgba(245,244,244,1) 0%, rgba(255,255,255,1) 64%, rgba(210,210,210,1) 100%);
+	background: -webkit-linear-gradient(218deg, rgba(245,244,244,1) 0%, rgba(255,255,255,1) 64%, rgba(210,210,210,1) 100%);
+	background: linear-gradient(218deg, rgba(245,244,244,1) 0%, rgba(255,255,255,1) 64%, rgba(210,210,210,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f4f4",endColorstr="#d2d2d2",GradientType=1);	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6",endColorstr="#e9e9e9",GradientType=1);
+	width: 100%;
+    z-index: 999;
+    height: 130px;
+    border-top-left-radius: 0.938rem !important;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 70%) !important;
+    border-top-right-radius: 0.938rem !important;
+}
+
+.trust-badge-container {
+	min-height: 15vh;
+}
+
+.home-fold {
+    box-shadow: 0 0 1rem rgb(0 0 0 / 70%) !important;
+}
+
+.home-fold-cover { 
+    box-shadow: 0 0 1rem rgb(0 0 0 / 70%) !important;
+}
+	
+.sidebar {
+    background-image: url(https://saputo.law/wp-content/uploads/2025/03/old_red_dallas_courthouse-2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 70%) !important;
+}
+
+.principal-attorneys {
+	position: absolute;
+	bottom:0;
+	width: 100%;
+}
+
+.about-us-block a {
+	text-decoration: none;
+}
+
+.about-us-block li {
+	margin-bottom: .7em;
+	list-style-type: none; 
+}
+
+.about-us-block ul {
+	margin-top: 0.3em;
+}
+
+.about-us-cover {
+	max-width: none! important;
+}
+
+.practice-area-button {
+	width:auto !important; 
+	box-shadow: 3px 3px 9px;
+}
+
+.practice-area-button a {
+	height:240px !important; 
+	width:240px !important;
+	vertical-align: middle;
+	display: table-cell;
+	font-family: "Oswald Regular", Arial, sans-serif;    padding: 15px! important;
+    font-size: 26px! important;
+	line-height: 1.1em;
+}
+
+.practice-area-button a:hover {
+	background: linear-gradient(135deg,rgb(32,32,32) 0%,rgb(218 0 43) 100%) !important;
+}
+
+#in-line-cta {
+	padding:30px 0px;
+	margin: 0px 0 24px 2%;
+    line-height: 1.1em;
+	font-size: 1.4EM;
+    font-style: italic;
+    background: rgb(84 116 255 / 6%);
+    padding-top: 20px;
+    text-align:center;
+    float: left;
+    width: 98%;
+    max-width: none;
+}
+
+.indent-level-1 {text-indent:-4%;margin-left:10%;}
+.indent-level-2 {text-indent:-4%;margin-left:15%;} 
+.indent-level-3 {text-indent:-4%;margin-left:18%;} 
+
+.wp-block-post-author__name {padding:0;}
+.wp-block-post-author__bio {
+    margin-bottom: 0.6em;
+}
+
+.wp-block-navigation__responsive-container-open {
+    position: absolute;
+}
+
+.not-guilty-image {
+	max-width:80%;
+}
+
+.wp-block-image.aligncenter>figcaption {
+    font-size: .8em;
+    opacity: .8;
+    padding: 0 1em;
+    line-height: 1.1em;
+}
+
+.list {
+	margin-left:5%;
+	margin-right:10%;
+}
+
+.legal-references {
+	padding-top:24px;
+	background-color:#f8f8f8;
+}
+
+@media screen and (max-width: 1000px) {
+
+	#knowledge-center {
+    	max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+	h1,h2 {letter-spacing: -.03em;}
+	
+	.home-middle-2025 {
+	height:45vh;
+	min-height: 300px! important;
+}
+	
+    #knowledge-center {
+    	margin: auto! important;
+    	float: none;
+    	display: block;
+    	max-width: 100%;
+    }
+	
+	.acuity-embed-button {
+		font-size: 1em; 
+		padding: 16px 21px;
+	}
+	
+	.trust-badge-css-champion {display:none;}
+	.trust-badge-css-dmag {max-width:46vw;}
+	.trust-badge-css-focus {max-width:46vw;}
+	.trust-badge-container {gap:1vw !important;padding: 10px 2px !important;min-height: 0;} 
+		
+	.wp-block-cover__image-background {
+    	background-position: 0% 49px! important;
+    	background-size: auto 85vh! important;
+    } 
+	
+	.wp-block-cover.has-parallax {
+		min-height: 300px !important;
+		padding-right: 4vw !important;
+	} 
+	
+	.breadcrumb-custom-css {
+		margin-bottom: 20px;
+	}
+    
+    .cta-css {
+    	min-height:320px !important;
+    }
+    
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+    	padding-bottom:158px; 
+    }
+    
+    .fixed-cta {height:113px;}
+	
+	.home-cover {
+		min-height: 430px! important;
+	}
+	
+	.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container ul {
+		padding:10px 10px 23px 10px;
+	}
+
+	
+}
+	
+@media screen and (max-width: 599px) { 
+	
+	#modal-1-content ul li:first-child ul li{
+    	width: auto;
+    	float: none;
+	}
+	
+	#modal-5-content ul li:first-child ul li{
+    	width: auto;
+    	float: none;
+	}
+	
+		.home-middle-2025 {
+	height:42vh;
+	min-height: 290px! important;
+}
+	
+	.home-bottom-2024 {
+    height: 12vh;
+}
+	
+	.wp-block-navigation ul, .wp-block-navigation ul li, .wp-block-navigation__responsive-container-content, .wp-block-navigation__responsive-dialog, .wp-block-navigation__responsive-close, .wp-block-navigation__responsive-container  {
+		height:auto;
+	}
+	
+	.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+    	padding: 8px 0;
+    	text-align: center;
+	}
+	
+	.wp-block-navigation .wp-block-navigation-item {
+    	max-width: none;
+    	line-height: 1em;
+	}
+	
+	.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+		box-shadow:none;
+	}
+	
+	.top-level-menu {font-weight:700;}
+	
+	.trust-badge-container-home {
+	}
+	
+	.home-subheading{
+		padding-bottom: 2vh! important;
+	}
+	
+	header {
+		background: none! important;
+	}
+	
+	
+}
+
+@media screen and (max-width: 500px) { 
+
+	
+	.home-middle-2025 {
+	height:54vh;
+	min-height: 350px! important;
+	}
+
+	.home-bottom-2024 {
+	height:12vh;
+	}
+	.wp-block-cover.has-parallax {
+		min-height: 300px !important;
+		padding-right: 4vw !important;
+	} 
+	
+	
+	.wp-block-cover__image-background {
+    	background-position: 0% 0px! important;
+    	background-size: auto 83vh! important;
+    } 
+	
+	.fixed-cta-logo {
+		padding: 0px 11px 10px 0;
+		text-align: center;
+	}
+    
+    .acuity-embed-button {
+    	padding: 16px 10px;
+    	margin-right:2vw! important;
+    	right: 0;
+    	font-size: 1em;
+    	position: relative;
+    }
+    
+    .home-tagline {padding-right: 0vw! important;}
+    .post-title-custom {padding-right: 3vw! important;}
+    .home-subheading{padding-right: 3vw! important;}
+	
+	.legal-references {text-align:center;}
+    
+}
