@@ -11,6 +11,7 @@
 			"defaultPalette": false,
 			"palette": [
 				{ "slug": "ink", "name": "Midnight Navy", "color": "#071A2B" },
+				{ "slug": "azure", "name": "Signal Blue", "color": "#0047AB" },
 				{ "slug": "steel", "name": "Deep Navy", "color": "#0C1E2C" },
 				{ "slug": "signal", "name": "Antique Bronze", "color": "#8F7A4E" },
 				{ "slug": "ice", "name": "Ivory", "color": "#F3F1EC" },

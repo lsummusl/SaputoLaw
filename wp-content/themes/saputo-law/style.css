@@ -3,7 +3,7 @@ Theme Name: Saputo Law
 Theme URI: https://saputolaw.thelaurensum.com
 Author: Lauren Summers
 Description: A focused block theme for Saputo Toufexis, built around clarity, authority, and fast access to counsel.
-Version: 0.5.20
+Version: 0.5.26
 Requires at least: 6.5
 Requires PHP: 8.1
 Text Domain: saputo-law
@@ -52,8 +52,17 @@ button:focus-visible {
 	top: 0;
 	z-index: 100;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-	background: rgba(7, 26, 43, 0.94) !important;
+	background: transparent !important;
+}
+
+.sl-site-header::before {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+	background: rgba(7, 26, 43, 0.94);
 	backdrop-filter: blur(18px);
+	content: "";
 }
 
 .sl-site-header .wp-block-navigation,
@@ -62,6 +71,7 @@ button:focus-visible {
 .sl-site-header .wp-block-navigation > .wp-block-navigation-item > .wp-block-navigation-item__content,
 .sl-site-header .wp-block-navigation a:not(.wp-element-button) {
 	padding: 0;
+	color: var(--wp--preset--color--white);
 }
 
 .sl-site-header .wp-block-navigation-item__content {
@@ -144,15 +154,30 @@ button:focus-visible {
 }
 
 .sl-site-header .wp-block-navigation__responsive-container.is-menu-open .sl-featured-menu > .wp-block-navigation__submenu-container {
-	position: static;
-	min-width: 0;
+	position: static !important;
+	display: flex !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 	width: 100%;
-	margin-top: 0.65rem;
+	min-width: 0;
+	margin-top: 0.35rem;
+	padding: 0 0 0.35rem 1rem;
+	border: 0;
+	background: transparent;
 	box-shadow: none;
 }
 
 .sl-site-header .wp-block-navigation__responsive-container.is-menu-open .sl-featured-menu > .wp-block-navigation__submenu-container::before {
 	display: none;
+}
+
+.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .sl-featured-menu .wp-block-navigation-item + .wp-block-navigation-item .wp-block-navigation-item__content {
+	border-top: 0;
+}
+
+.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .sl-featured-menu .wp-block-navigation-item__content {
+	padding: 0.45rem 0 !important;
+	border-left: 0;
 }
 
 .sl-site-header .wp-block-button__link,
@@ -404,6 +429,31 @@ button:focus-visible {
 	white-space: nowrap;
 }
 
+.sl-library-list {
+	list-style: none;
+	margin: 1.25rem 0 0;
+	padding: 0;
+}
+
+.sl-library-item {
+	border-top: 1px solid var(--sl-rule);
+	padding: 1.15rem 0;
+}
+
+.sl-library-item a {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: 1.15rem;
+	font-weight: 500;
+	line-height: 1.3;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.sl-library-item p {
+	margin: 0.4rem 0 0;
+	color: var(--wp--preset--color--steel);
+}
+
 .sl-press-item {
 	align-items: center;
 	max-width: var(--wp--style--global--wide-size);
@@ -529,6 +579,7 @@ button:focus-visible {
 	position: relative;
 	overflow: hidden;
 	margin-block: 0 !important;
+	background-color: #0047AB !important;
 	box-shadow: none;
 }
 
@@ -576,11 +627,101 @@ button:focus-visible {
 	transform: translate(-50%, -50%) rotate(45deg);
 }
 
-@media (max-width: 781px) {
-	.sl-site-header {
-		position: relative;
+@media (max-width: 900px) {
+	.sl-site-header .alignwide.is-nowrap {
+		gap: 0.75rem;
 	}
 
+	.sl-site-header .alignwide > .wp-block-group.is-nowrap {
+		flex: 0 0 auto;
+		gap: 0.5rem;
+	}
+
+	.sl-brand {
+		min-width: 0;
+		flex: 1 1 auto;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container-open {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		min-width: 2.75rem;
+		min-height: 2.75rem;
+		color: var(--wp--preset--color--white);
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container:not(.is-menu-open) {
+		display: none !important;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open {
+		position: fixed !important;
+		inset: 0 !important;
+		display: flex !important;
+		width: 100%;
+		height: 100dvh;
+		max-width: none;
+		overflow: auto;
+		background-color: #071a2b !important;
+		color: var(--wp--preset--color--white) !important;
+		z-index: 100000;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open a,
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+		color: var(--wp--preset--color--white) !important;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+		align-items: stretch !important;
+		width: 100%;
+		padding-top: 4rem;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		width: 100%;
+		gap: 0.15rem;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+		width: 100%;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open > .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content,
+	.sl-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+		display: block;
+		width: 100%;
+		padding: 0.85rem 0 !important;
+		border-bottom-color: transparent;
+		font-size: 1.15rem;
+	}
+
+	.sl-site-header .wp-block-navigation__responsive-container-close {
+		top: 1rem;
+		right: 1rem;
+		min-width: 2.75rem;
+		min-height: 2.75rem;
+		color: var(--wp--preset--color--white);
+	}
+
+	.sl-site-header .wp-block-buttons .wp-element-button {
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 480px) {
+	.sl-site-header .wp-block-buttons .wp-element-button {
+		padding: 0.5rem 0.7rem;
+		font-size: 0.7rem;
+		letter-spacing: 0.04em;
+	}
+}
+
+@media (max-width: 781px) {
 	.sl-site-header .alignwide,
 	footer .alignwide,
 	main .is-layout-constrained > :where(:not(.alignfull)),

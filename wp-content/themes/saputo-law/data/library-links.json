@@ -1,0 +1,120 @@
+{
+    "scrapedAt":  "2026-10-16T01:13:06.2437844Z",
+    "source":  "https://saputo.law",
+    "sections":  [
+                     {
+                         "id":  "practice",
+                         "heading":  "Guides from the library",
+                         "intro":  "These guides stay at their current addresses. Open one for the full explanation.",
+                         "links":  [
+                                       {
+                                           "title":  "Criminal Law",
+                                           "description":  "The information and opinions we publish about criminal law on this website reflect our experience as practicing lawyers and focus on topics that interest the public. When most...",
+                                           "path":  "/criminal-law/"
+                                       },
+                                       {
+                                           "title":  "Under Investigation for a Crime?",
+                                           "description":  "Criminal investigations are conducted by the various police agencies of the state and federal government in addition to the state district attorneys and federal prosecutors. How...",
+                                           "path":  "/criminal-investigation/"
+                                       },
+                                       {
+                                           "title":  "What To Do If You’ve Been Arrested",
+                                           "description":  "What to do if you\u0027re arrested in Texas? In this article, we explain everything you need to know if the police have arrested you",
+                                           "path":  "/arrested-in-texas/"
+                                       },
+                                       {
+                                           "title":  "How to Fight a Criminal Charge in Texas",
+                                           "description":  "If you’re wondering how to fight a criminal charge in Texas, you need to know some things right from the beginning. Fighting a charge in Texas requires tenacity, expertise, and...",
+                                           "path":  "/fighting-a-charge/"
+                                       },
+                                       {
+                                           "title":  "Dallas DWI Attorneys",
+                                           "description":  "We have beat DWI breath scores, blood scores, and even accident cases. Do not plead guilty until you talk to us. Let us handle your case, and we will take care of everything from...",
+                                           "path":  "/dallas-dwi-attorney/"
+                                       },
+                                       {
+                                           "title":  "Dallas Assault Attorneys",
+                                           "description":  "If you’ve been arrested for Assault , it’s crucial to promptly retain legal representation to safeguard your rights against the vigorous prosecution by the state. Remember, you...",
+                                           "path":  "/dallas-assault-attorney/"
+                                       },
+                                       {
+                                           "title":  "Dallas Sexual Assault Lawyer",
+                                           "description":  "Are You Looking for the Best Dallas Sexual Assault Lawyer? A sexual assault charge puts your entire life at risk. From the moment you’re arrested, the government will use its...",
+                                           "path":  "/dallas-sexual-assault-attorney/"
+                                       },
+                                       {
+                                           "title":  "Dallas Murder Attorney",
+                                           "description":  "Our comprehensive approach to handling Dallas Murder cases includes both advocacy in the courtrooms of Dallas and tackling the collateral consequences of criminal prosecutions. We...",
+                                           "path":  "/dallas-murder-attorney/"
+                                       },
+                                       {
+                                           "title":  "Texas Federal Criminal Attorneys",
+                                           "description":  "Are You Looking for the Best Texas Federal Criminal Attorneys? If you’re looking for the best Texas Federal Criminal Attorneys, then we want to represent you. As you can see from...",
+                                           "path":  "/federal-criminal-defense-attorneys/"
+                                       },
+                                       {
+                                           "title":  "Texas Criminal Appeals Attorney",
+                                           "description":  "Are You Looking for the Best Texas Criminal Appeals Attorney? If you’re looking for the best Texas Criminal Appeals attorney, then we want to represent you. As you can see from...",
+                                           "path":  "/texas-criminal-appeal-attorney/"
+                                       },
+                                       {
+                                           "title":  "Clear Your Criminal Record in Texas",
+                                           "description":  "Want to clear your criminal record? Saputo Toufexis helps you pursue expunctions and nondisclosures across Texas",
+                                           "path":  "/criminal-law/record-clearing/"
+                                       },
+                                       {
+                                           "title":  "Sex Offender Deregistration in Texas",
+                                           "description":  "Under the Texas Sex Offender Deregistration law, if you are required to register under the sex offender registration program, you may be eligible to deregister after a minimum...",
+                                           "path":  "/sex-offender-deregistration/"
+                                       },
+                                       {
+                                           "title":  "DWI Defense Resources \u0026 Strategy",
+                                           "description":  "We have devoted thousands of attorney hours practicing DWI Defense across the state of Texas, and we have invested heavily in compiling the best resources in DWI law and defense...",
+                                           "path":  "/dwi-defense-resources/"
+                                       }
+                                   ]
+                     },
+                     {
+                         "id":  "insights",
+                         "heading":  "From the legal library",
+                         "intro":  "The statute library and practice guides remain published. These are the places to start.",
+                         "links":  [
+                                       {
+                                           "title":  "Criminal Law",
+                                           "description":  "The information and opinions we publish about criminal law on this website reflect our experience as practicing lawyers and focus on topics that interest the public. When most...",
+                                           "path":  "/criminal-law/"
+                                       },
+                                       {
+                                           "title":  "Texas Crimes",
+                                           "description":  "This is a list of all Texas criminal offenses, updated for 2025, with links to analyses of all state law crimes",
+                                           "path":  "/criminal-law/texas/"
+                                       },
+                                       {
+                                           "title":  "Clear Your Criminal Record in Texas",
+                                           "description":  "Want to clear your criminal record? Saputo Toufexis helps you pursue expunctions and nondisclosures across Texas",
+                                           "path":  "/criminal-law/record-clearing/"
+                                       },
+                                       {
+                                           "title":  "Texas Probation Law",
+                                           "description":  "[2023 Update] Our lawyer analyzes Texas Probation law here, including both misdemeanor \u0026 felony probation rules, eligibility, and other rules",
+                                           "path":  "/criminal-law/texas-probation-law/"
+                                       },
+                                       {
+                                           "title":  "Writs of Habeas Corpus in Federal Court",
+                                           "description":  "Seeking habeas corpus relief in federal court? Saputo Toufexis provides skilled representation for post-conviction matters",
+                                           "path":  "/criminal-law/federal/federal-habeas-corpus/"
+                                       },
+                                       {
+                                           "title":  "DWI Defense Resources \u0026 Strategy",
+                                           "description":  "We have devoted thousands of attorney hours practicing DWI Defense across the state of Texas, and we have invested heavily in compiling the best resources in DWI law and defense...",
+                                           "path":  "/dwi-defense-resources/"
+                                       },
+                                       {
+                                           "title":  "New Texas Criminal Laws in 2025",
+                                           "description":  "A detailed look at all of the new Texas criminal laws passed in 2025 by the 89th Texas Legislature. Get legal analysis and accurate information here",
+                                           "path":  "/texas-criminal-law/new-texas-criminal-laws-2025/"
+                                       }
+                                   ]
+                     }
+                 ]
+}

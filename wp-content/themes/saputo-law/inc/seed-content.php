@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-const SAPUTO_LAW_SEED_VERSION = '0.5.3';
+const SAPUTO_LAW_SEED_VERSION = '0.5.5';
 
 /**
  * Create one page when its slug does not already exist.
@@ -269,6 +269,7 @@ BLOCKS;
 	saputo_law_remove_sample_content();
 	saputo_law_configure_permalinks();
 	saputo_law_seed_header_navigation();
+	saputo_law_strip_redirect_labels_from_posts();
 	update_option('saputo_law_seed_version', SAPUTO_LAW_SEED_VERSION);
 	set_transient('saputo_law_seeded_notice', true, 60);
 }
@@ -316,6 +317,67 @@ BLOCKS;
 					'post_content' => wp_slash($markup),
 				)
 			);
+		}
+	}
+}
+
+/**
+ * Remove live-site “(redirect)” markers from imported titles and copy.
+ */
+function saputo_law_strip_redirect_labels_from_posts(): void {
+	global $wpdb;
+
+	$ids = $wpdb->get_col(
+		"SELECT ID FROM {$wpdb->posts}
+		WHERE post_type IN ('page','post')
+		AND (
+			post_title LIKE '%(redirect%'
+			OR post_content LIKE '%(redirect%'
+			OR post_excerpt LIKE '%(redirect%'
+		)"
+	);
+
+	foreach ($ids as $post_id) {
+		$post = get_post((int) $post_id);
+		if (! $post instanceof WP_Post) {
+			continue;
+		}
+
+		$update = array('ID' => $post->ID);
+		$changed = false;
+
+		$new_title = saputo_law_strip_redirect_label($post->post_title);
+		if ($new_title !== $post->post_title) {
+			$update['post_title'] = $new_title;
+			$changed = true;
+		}
+
+		$new_excerpt = saputo_law_strip_redirect_label($post->post_excerpt);
+		if ($new_excerpt !== $post->post_excerpt) {
+			$update['post_excerpt'] = $new_excerpt;
+			$changed = true;
+		}
+
+		$new_content = saputo_law_strip_redirect_label($post->post_content);
+		if ($new_content !== $post->post_content) {
+			$update['post_content'] = $new_content;
+			$changed = true;
+		}
+
+		if ($changed) {
+			wp_update_post(wp_slash($update));
+		}
+
+		foreach (array('_yoast_wpseo_title', '_yoast_wpseo_opengraph-title') as $meta_key) {
+			$meta = get_post_meta($post->ID, $meta_key, true);
+			if (! is_string($meta) || $meta === '') {
+				continue;
+			}
+
+			$cleaned = saputo_law_strip_redirect_label($meta);
+			if ($cleaned !== $meta) {
+				update_post_meta($post->ID, $meta_key, $cleaned);
+			}
 		}
 	}
 }

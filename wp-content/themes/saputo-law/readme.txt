@@ -1,6 +1,6 @@
 === Saputo Law ===
 
-Version: 0.5.20
+Version: 0.5.26
 
 A custom block theme for the Saputo Law proof of concept.
 
@@ -41,6 +41,7 @@ The homepage hero uses the firm’s original Texas and United States flags photo
 == Color system ==
 
 Midnight Navy: #071A2B
+Signal Blue: #0047AB
 Deep Navy: #0C1E2C
 Antique Bronze: #8F7A4E
 Ivory: #F3F1EC
