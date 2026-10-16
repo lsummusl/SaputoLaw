@@ -7,7 +7,66 @@
 
 declare(strict_types=1);
 
+/**
+ * Live-site titles sometimes include a CMS marker such as "(redirected)".
+ */
+function saputo_law_strip_redirect_label(string $text): string {
+	$clean = preg_replace('/\(\s*redirect(?:ed)?\s*\)\s*/i', '', $text);
+	if (! is_string($clean)) {
+		return trim($text);
+	}
+
+	$clean = preg_replace('/\s{2,}/', ' ', $clean);
+
+	return trim(is_string($clean) ? $clean : $text);
+}
+
 require_once get_theme_file_path('inc/seed-content.php');
+require_once get_theme_file_path('inc/library-links.php');
+
+add_filter(
+	'the_title',
+	static function ($title) {
+		return is_string($title) ? saputo_law_strip_redirect_label($title) : $title;
+	},
+	20
+);
+
+add_filter(
+	'document_title_parts',
+	static function ($parts) {
+		if (is_array($parts) && isset($parts['title']) && is_string($parts['title'])) {
+			$parts['title'] = saputo_law_strip_redirect_label($parts['title']);
+		}
+
+		return $parts;
+	},
+	20
+);
+
+add_filter(
+	'wpseo_title',
+	static function ($title) {
+		return is_string($title) ? saputo_law_strip_redirect_label($title) : $title;
+	},
+	20
+);
+
+add_filter(
+	'wpseo_opengraph_title',
+	static function ($title) {
+		return is_string($title) ? saputo_law_strip_redirect_label($title) : $title;
+	},
+	20
+);
+
+add_filter(
+	'single_post_title',
+	static function ($title) {
+		return is_string($title) ? saputo_law_strip_redirect_label($title) : $title;
+	},
+	20
+);
 
 add_action(
 	'wp_enqueue_scripts',
