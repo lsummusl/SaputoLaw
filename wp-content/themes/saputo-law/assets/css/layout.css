@@ -9,3 +9,9 @@
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
+
+.wp-site-blocks > main > *:last-child,
+.wp-block-group > .sl-cta:last-child,
+.wp-block-group > .sl-defense-banner {
+	margin-block: 0;
+}

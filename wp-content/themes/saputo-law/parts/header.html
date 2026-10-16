@@ -16,10 +16,16 @@
 
 		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
-			<!-- wp:navigation {"textColor":"white","overlayBackgroundColor":"ink","overlayTextColor":"white","style":{"typography":{"fontSize":"0.9rem","fontWeight":"600"},"spacing":{"blockGap":"1.25rem"}},"layout":{"type":"flex","justifyContent":"right"}} -->
-				<!-- wp:navigation-link {"label":"Attorneys","url":"/attorneys/","kind":"custom"} /-->
+			<!-- wp:navigation {"textColor":"white","overlayBackgroundColor":"ink","overlayTextColor":"white","showSubmenuIcon":true,"style":{"typography":{"fontSize":"0.9rem","fontWeight":"600"},"spacing":{"blockGap":"1.25rem","padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"flex","justifyContent":"right"}} -->
+				<!-- wp:navigation-submenu {"label":"Attorneys","url":"/attorneys/","kind":"custom","className":"sl-featured-menu sl-attorneys-menu"} -->
+					<!-- wp:navigation-link {"label":"Paul Saputo","url":"/attorneys/paul-saputo/","kind":"custom","className":"sl-attorney-paul"} /-->
+					<!-- wp:navigation-link {"label":"Nicholas Toufexis","url":"/attorneys/nicholas-toufexis/","kind":"custom","className":"sl-attorney-nick"} /-->
+				<!-- /wp:navigation-submenu -->
 				<!-- wp:navigation-link {"label":"Practice Areas","url":"/practice-areas/","kind":"custom"} /-->
-				<!-- wp:navigation-link {"label":"Results","url":"/results/","kind":"custom"} /-->
+				<!-- wp:navigation-submenu {"label":"Results","url":"/results/","kind":"custom","className":"sl-featured-menu sl-results-menu"} -->
+					<!-- wp:navigation-link {"label":"Case Results","url":"/results/","kind":"custom","className":"sl-results-cases"} /-->
+					<!-- wp:navigation-link {"label":"Testimonials","url":"/testimonials/","kind":"custom","className":"sl-results-testimonials"} /-->
+				<!-- /wp:navigation-submenu -->
 				<!-- wp:navigation-link {"label":"Insights","url":"/insights-recognition/","kind":"custom"} /-->
 			<!-- /wp:navigation -->
 			<!-- wp:buttons -->

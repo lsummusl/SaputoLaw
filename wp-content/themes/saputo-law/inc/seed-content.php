@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-const SAPUTO_LAW_SEED_VERSION = '0.2.0';
+const SAPUTO_LAW_SEED_VERSION = '0.5.3';
 
 /**
  * Create one page when its slug does not already exist.
@@ -41,6 +41,32 @@ function saputo_law_seed_page(
 	);
 
 	return is_wp_error($page_id) ? 0 : (int) $page_id;
+}
+
+/**
+ * Replace the body of an existing page. Used for additive seed updates
+ * such as attorney portraits.
+ */
+function saputo_law_set_page_content(string $slug, string $content): void {
+	$matches = get_posts(
+		array(
+			'name'           => $slug,
+			'post_type'      => 'page',
+			'post_status'    => 'any',
+			'posts_per_page' => 1,
+		)
+	);
+
+	if ($matches === array()) {
+		return;
+	}
+
+	wp_update_post(
+		array(
+			'ID'           => (int) $matches[0]->ID,
+			'post_content' => wp_slash($content),
+		)
+	);
 }
 
 /**
@@ -134,8 +160,6 @@ BLOCKS;
 	$attorneys_id = saputo_law_seed_page('attorneys', 'Attorneys', $attorneys_content);
 
 	$paul_content = <<<'BLOCKS'
-<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">Founding Partner</p><!-- /wp:paragraph -->
-<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Paul Saputo</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"fontSize":"large"} --><p class="has-large-font-size">Paul Saputo founded the firm around one purpose: defending people against the power of the government. He represents clients in serious state and federal criminal matters throughout Texas.</p><!-- /wp:paragraph -->
 <!-- wp:separator {"className":"sl-tailored-rule"} --><hr class="wp-block-separator has-alpha-channel-opacity sl-tailored-rule"/><!-- /wp:separator -->
 <!-- wp:columns -->
@@ -147,10 +171,9 @@ BLOCKS;
 <!-- wp:paragraph --><p>Paul’s approach is direct: investigate the facts, challenge the government’s assumptions, and prepare every case with trial in mind.</p><!-- /wp:paragraph -->
 BLOCKS;
 	saputo_law_seed_page('paul-saputo', 'Paul Saputo', $paul_content, 'publish', $attorneys_id);
+	saputo_law_set_page_content('paul-saputo', $paul_content);
 
 	$nick_content = <<<'BLOCKS'
-<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">Managing Partner</p><!-- /wp:paragraph -->
-<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Nicholas Toufexis</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"fontSize":"large"} --><p class="has-large-font-size">Nicholas Toufexis brings a decade of service in the United States Navy and a disciplined, trial-focused approach to criminal defense in Texas state and federal courts.</p><!-- /wp:paragraph -->
 <!-- wp:separator {"className":"sl-tailored-rule"} --><hr class="wp-block-separator has-alpha-channel-opacity sl-tailored-rule"/><!-- /wp:separator -->
 <!-- wp:columns -->
@@ -162,6 +185,7 @@ BLOCKS;
 <!-- wp:paragraph --><p>Nick prepares each matter around the client’s specific risks, the available evidence, and the decisions that will create leverage before trial.</p><!-- /wp:paragraph -->
 BLOCKS;
 	saputo_law_seed_page('nicholas-toufexis', 'Nicholas Toufexis', $nick_content, 'publish', $attorneys_id);
+	saputo_law_set_page_content('nicholas-toufexis', $nick_content);
 
 	$practice_content = <<<'BLOCKS'
 <!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">Focused criminal defense</p><!-- /wp:paragraph -->
@@ -190,8 +214,11 @@ BLOCKS;
 <!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size"><strong>Prior results do not guarantee a similar outcome.</strong> Every case is different.</p><!-- /wp:paragraph -->
 BLOCKS;
 	saputo_law_seed_page('results', 'Results', $results_content);
+	saputo_law_seed_page('victories', 'Results');
+	saputo_law_seed_page('testimonials', 'Testimonials');
 
 	saputo_law_seed_page('insights-recognition', 'Insights & Recognition');
+	saputo_law_seed_page('press', 'Press');
 
 	$contact_content = <<<'BLOCKS'
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
@@ -241,8 +268,56 @@ BLOCKS;
 	update_option('blogdescription', 'Texas Criminal Defense');
 	saputo_law_remove_sample_content();
 	saputo_law_configure_permalinks();
+	saputo_law_seed_header_navigation();
 	update_option('saputo_law_seed_version', SAPUTO_LAW_SEED_VERSION);
 	set_transient('saputo_law_seeded_notice', true, 60);
+}
+
+/**
+ * Keep the header menu on the four marketing items, with Attorneys and Results nested.
+ * WordPress copies navigation into a CPT on first use, so theme-file edits
+ * alone will not update an already-installed header.
+ */
+function saputo_law_seed_header_navigation(): void {
+	if (! post_type_exists('wp_navigation')) {
+		return;
+	}
+
+	$markup = <<<'BLOCKS'
+<!-- wp:navigation-submenu {"label":"Attorneys","url":"/attorneys/","kind":"custom","className":"sl-featured-menu sl-attorneys-menu"} -->
+	<!-- wp:navigation-link {"label":"Paul Saputo","url":"/attorneys/paul-saputo/","kind":"custom","className":"sl-attorney-paul"} /-->
+	<!-- wp:navigation-link {"label":"Nicholas Toufexis","url":"/attorneys/nicholas-toufexis/","kind":"custom","className":"sl-attorney-nick"} /-->
+<!-- /wp:navigation-submenu -->
+<!-- wp:navigation-link {"label":"Practice Areas","url":"/practice-areas/","kind":"custom"} /-->
+<!-- wp:navigation-submenu {"label":"Results","url":"/results/","kind":"custom","className":"sl-featured-menu sl-results-menu"} -->
+	<!-- wp:navigation-link {"label":"Case Results","url":"/results/","kind":"custom","className":"sl-results-cases"} /-->
+	<!-- wp:navigation-link {"label":"Testimonials","url":"/testimonials/","kind":"custom","className":"sl-results-testimonials"} /-->
+<!-- /wp:navigation-submenu -->
+<!-- wp:navigation-link {"label":"Insights","url":"/insights-recognition/","kind":"custom"} /-->
+BLOCKS;
+
+	$navs = get_posts(
+		array(
+			'post_type'      => 'wp_navigation',
+			'post_status'    => array('publish', 'draft'),
+			'posts_per_page' => 20,
+		)
+	);
+
+	foreach ($navs as $nav) {
+		$content = (string) $nav->post_content;
+		if (
+			str_contains($content, 'Practice Areas')
+			&& (str_contains($content, '/results/') || str_contains($content, 'Results'))
+		) {
+			wp_update_post(
+				array(
+					'ID'           => $nav->ID,
+					'post_content' => wp_slash($markup),
+				)
+			);
+		}
+	}
 }
 
 /**

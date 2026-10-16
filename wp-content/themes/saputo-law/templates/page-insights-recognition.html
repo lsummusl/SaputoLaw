@@ -1,55 +1,43 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","layout":{"type":"default"}} -->
-<main class="wp-block-group alignfull">
-	<!-- wp:group {"align":"full","backgroundColor":"ink","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull has-white-color has-ink-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+<!-- wp:group {"tagName":"main","align":"full","className":"sl-insights","layout":{"type":"default"}} -->
+<main class="wp-block-group alignfull sl-insights">
+	<!-- wp:group {"align":"full","backgroundColor":"ink","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull has-white-color has-ink-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
 		<!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"brass"} -->
-			<p class="sl-eyebrow has-brass-color has-text-color">Ideas · Coverage · Recognition</p>
+			<p class="sl-eyebrow has-brass-color has-text-color">Writing · Coverage · Honors</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":1,"fontSize":"hero"} -->
 			<h1 class="wp-block-heading has-hero-font-size">Insights &amp; Recognition</h1>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"textColor":"ice","fontSize":"large","className":"sl-hero-copy"} -->
-			<p class="sl-hero-copy has-ice-color has-text-color has-large-font-size">Legal analysis from the attorneys who use the law in court, alongside independent coverage and professional recognition.</p>
-			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignwide">
-			<!-- wp:group {"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group">
-				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">Legal insights</p><!-- /wp:paragraph -->
-				<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Clear answers. Current law.</h2><!-- /wp:heading -->
-			</div>
-			<!-- /wp:group -->
-			<!-- wp:paragraph -->
-			<p><a href="https://saputo.law/blog/">View the full article archive →</a></p>
-			<!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Recent writing</h2><!-- /wp:heading -->
+			<!-- wp:paragraph --><p><a href="/articles/">All articles →</a></p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-
-		<!-- wp:query {"queryId":8,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide"} -->
+		<!-- wp:query {"queryId":8,"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide"} -->
 		<div class="wp-block-query alignwide">
-			<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-				<!-- wp:group {"className":"sl-card","backgroundColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group sl-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:post-date {"textColor":"steel","fontSize":"small"} /-->
-					<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
-					<!-- wp:post-excerpt {"moreText":"Read insight","excerptLength":20} /-->
+			<!-- wp:post-template {"className":"sl-insights-list","layout":{"type":"default"}} -->
+				<!-- wp:group {"className":"sl-insights-item","style":{"spacing":{"padding":{"top":"1.15rem","bottom":"1.15rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+				<div class="wp-block-group sl-insights-item" style="padding-top:1.15rem;padding-bottom:1.15rem">
+					<!-- wp:post-title {"isLink":true,"fontSize":"medium"} /-->
+					<!-- wp:post-date {"textColor":"silver","fontSize":"small"} /-->
 				</div>
 				<!-- /wp:group -->
 			<!-- /wp:post-template -->
 			<!-- wp:query-no-results -->
-				<!-- wp:paragraph {"backgroundColor":"ice","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
-				<p class="has-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">Articles will appear here after they are imported into this WordPress installation.</p>
+				<!-- wp:paragraph -->
+				<p>Articles will appear here after they are imported.</p>
 				<!-- /wp:paragraph -->
 			<!-- /wp:query-no-results -->
 		</div>
@@ -57,66 +45,44 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"align":"full","backgroundColor":"ice","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull has-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-		<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
-		<div class="wp-block-columns alignwide">
-			<!-- wp:column {"width":"36%"} -->
-			<div class="wp-block-column" style="flex-basis:36%">
-				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">In the press</p><!-- /wp:paragraph -->
-				<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Trusted for legal context.</h2><!-- /wp:heading -->
-				<!-- wp:paragraph --><p>Journalists turn to Saputo Toufexis for perspective on criminal prosecutions, constitutional rights, and the limits of government power.</p><!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:column -->
-			<!-- wp:column -->
-			<div class="wp-block-column">
-				<!-- wp:group {"className":"sl-card","backgroundColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"},"margin":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group sl-card has-white-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Salon · 2023</p><!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"fontSize":"large"} --><h3 class="wp-block-heading has-large-font-size"><a href="https://www.salon.com/2023/10/26/legal-experts-defense-may-be-doomed-as-5-more-co-defendants-seek-fulton-plea-deals/">Paul Saputo explains criminal-conspiracy charges in the Georgia prosecution of Donald Trump</a></h3><!-- /wp:heading -->
-				</div>
-				<!-- /wp:group -->
-				<!-- wp:group {"className":"sl-card","backgroundColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"},"margin":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group sl-card has-white-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">The Verge · 2020</p><!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"fontSize":"large"} --><h3 class="wp-block-heading has-large-font-size"><a href="https://www.theverge.com/2020/10/7/21505964/netflix-cuties-texas-indictment-lewd-depiction-movie-grand-jury">Paul Saputo comments on the Texas indictment involving Netflix’s <em>Cuties</em></a></h3><!-- /wp:heading -->
-				</div>
-				<!-- /wp:group -->
-				<!-- wp:paragraph --><p><a href="https://saputo.law/press/">View all press coverage →</a></p><!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
-	</div>
-	<!-- /wp:group -->
-
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-		<!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
+	<!-- wp:group {"align":"full","backgroundColor":"ice","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull has-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignwide">
-			<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"signal"} --><p class="sl-eyebrow has-signal-color has-text-color">Honors</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Recognition with a source.</h2><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Selected recognition from legal peers, independent publications, and clients.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Press</h2><!-- /wp:heading -->
+			<!-- wp:paragraph --><p><a href="/press/">All coverage →</a></p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
-		<div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--60)">
-			<!-- wp:column {"className":"sl-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
-			<div class="wp-block-column sl-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Paul Saputo · 2024</p><!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"fontSize":"large"} --><h3 class="wp-block-heading has-large-font-size">D Magazine<br>Best Lawyers in Dallas</h3><!-- /wp:heading -->
+		<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"sl-press-item","style":{"spacing":{"blockGap":{"left":"1.25rem"}}}} -->
+		<div class="wp-block-columns alignwide sl-press-item are-vertically-aligned-center">
+			<!-- wp:column {"verticalAlignment":"center","width":"28%"} -->
+			<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:28%">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"custom","className":"sl-press-thumb"} -->
+				<figure class="wp-block-image size-full sl-press-thumb"><a href="https://www.law.com/texaslawyer/2023/11/02/what-texas-drag-law-could-mean-for-the-lgbtq-community/" target="_blank" rel="noreferrer noopener"><img src="/wp-content/themes/saputo-law/assets/images/press/nicholas-toufexis-texas-lawyer.jpg" alt="Nicholas Toufexis, courtesy photo from Texas Lawyer"/></a></figure>
+				<!-- /wp:image -->
 			</div>
 			<!-- /wp:column -->
-			<!-- wp:column {"className":"sl-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
-			<div class="wp-block-column sl-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Paul Saputo · 2020</p><!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"fontSize":"large"} --><h3 class="wp-block-heading has-large-font-size">Martindale-Hubbell<br>AV Preeminent</h3><!-- /wp:heading -->
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center">
+				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"brass"} --><p class="sl-eyebrow has-brass-color has-text-color">Texas Lawyer · 2023</p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="https://www.law.com/texaslawyer/2023/11/02/what-texas-drag-law-could-mean-for-the-lgbtq-community/" target="_blank" rel="noreferrer noopener">Nicholas Toufexis on Texas’s drag-performance law</a></p><!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:column -->
-			<!-- wp:column {"className":"sl-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
-			<div class="wp-block-column sl-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"steel"} --><p class="sl-eyebrow has-steel-color has-text-color">Nicholas Toufexis · 2025</p><!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"fontSize":"large"} --><h3 class="wp-block-heading has-large-font-size">Best Lawyers<br>Ones to Watch</h3><!-- /wp:heading -->
+		</div>
+		<!-- /wp:columns -->
+		<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"sl-press-item","style":{"spacing":{"blockGap":{"left":"1.25rem"}}}} -->
+		<div class="wp-block-columns alignwide sl-press-item are-vertically-aligned-center">
+			<!-- wp:column {"verticalAlignment":"center","width":"28%"} -->
+			<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:28%">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"custom","className":"sl-press-thumb"} -->
+				<figure class="wp-block-image size-full sl-press-thumb"><a href="https://www.salon.com/2023/10/26/legal-experts-defense-may-be-doomed-as-5-more-co-defendants-seek-fulton-plea-deals/" target="_blank" rel="noreferrer noopener"><img src="/wp-content/themes/saputo-law/assets/images/press/salon-fulton-plea-deals.jpg" alt="Salon coverage of Fulton County plea deals"/></a></figure>
+				<!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center">
+				<!-- wp:paragraph {"className":"sl-eyebrow","textColor":"brass"} --><p class="sl-eyebrow has-brass-color has-text-color">Salon · 2023</p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><a href="https://www.salon.com/2023/10/26/legal-experts-defense-may-be-doomed-as-5-more-co-defendants-seek-fulton-plea-deals/" target="_blank" rel="noreferrer noopener">Paul Saputo on criminal-conspiracy charges in Georgia</a></p><!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:column -->
 		</div>
@@ -124,9 +90,66 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"align":"wide","className":"sl-cta","backgroundColor":"steel","textColor":"white","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|80"},"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide sl-cta has-white-color has-steel-background-color has-text-color has-background" style="margin-bottom:var(--wp--preset--spacing--80);padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)">
-		<!-- wp:heading {"fontSize":"x-large"} --><h2 class="wp-block-heading has-x-large-font-size">Need advice about your case?</h2><!-- /wp:heading -->
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:heading {"align":"wide","level":2} --><h2 class="wp-block-heading alignwide">Recognition</h2><!-- /wp:heading -->
+		<!-- wp:paragraph {"align":"wide"} --><p class="alignwide">Selected honors from Martindale-Hubbell, D Magazine, Best Lawyers, Super Lawyers, the Dallas Bar Association, Lead Counsel, and Avvo.</p><!-- /wp:paragraph -->
+
+		<!-- wp:columns {"align":"wide","className":"sl-recognition-bar","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
+		<div class="wp-block-columns alignwide sl-recognition-bar">
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/AV-Preeminent-2026-Paul-Saputo-Criminal-Lawyer-Badge.webp" alt="Martindale-Hubbell AV Preeminent 2026 recognition for Paul Saputo"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/d-mag-2026-dark-full-size.webp" alt="D Magazine Best Lawyers in Dallas 2026 recognition"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/Ones-To-Watch-Lawyer-Logo-Nicholas-Toufexis-2026-scaled.webp" alt="Best Lawyers Ones to Watch 2026 recognition for Nicholas Toufexis"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/Texas-Super-Lawyers-2026.webp" alt="Texas Super Lawyers 2026 recognition"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+		</div>
+		<!-- /wp:columns -->
+
+		<!-- wp:columns {"align":"wide","className":"sl-recognition-bar","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
+		<div class="wp-block-columns alignwide sl-recognition-bar">
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/Client-Champion-2026-140px-light.webp" alt="Martindale-Hubbell Client Champion 2026 recognition for Paul Saputo"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/DBA-100-Club-2024-300x263.webp" alt="Dallas Bar Association 100 Club 2024"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/lead-counsel-rated-blue.png" alt="Lead Counsel rated in criminal defense"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+			<!-- wp:column {"className":"sl-proof-item","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column sl-proof-item" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"sl-proof-logo"} --><figure class="wp-block-image size-full sl-proof-logo"><img src="/wp-content/themes/saputo-law/assets/images/source/Avvo_logo_navy.webp" alt="Avvo"/></figure><!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
+		</div>
+		<!-- /wp:columns -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"full","className":"sl-cta","backgroundColor":"ink","textColor":"white","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignfull sl-cta has-white-color has-ink-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)">
+		<!-- wp:heading --><h2 class="wp-block-heading">Need advice about your case?</h2><!-- /wp:heading -->
 		<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/contact-us/">Request a confidential consultation</a></div><!-- /wp:button --></div><!-- /wp:buttons -->
 	</div>
 	<!-- /wp:group -->

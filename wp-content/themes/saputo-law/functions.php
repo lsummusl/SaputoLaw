@@ -24,10 +24,15 @@ add_action(
 			array('saputo-law'),
 			(string) filemtime(get_theme_file_path('assets/css/layout.css'))
 		);
-	}
+
+		wp_dequeue_style('wp-block-library-theme');
+		wp_deregister_style('wp-block-library-theme');
+	},
+	20
 );
 
 add_action('after_switch_theme', 'saputo_law_seed_site');
+add_action('admin_init', 'saputo_law_seed_site');
 
 add_action(
 	'after_setup_theme',
@@ -35,6 +40,5 @@ add_action(
 		add_theme_support('editor-styles');
 		add_editor_style('style.css');
 		add_theme_support('responsive-embeds');
-		add_theme_support('wp-block-styles');
 	}
 );

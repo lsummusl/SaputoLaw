@@ -11,9 +11,9 @@
 			"defaultPalette": false,
 			"palette": [
 				{ "slug": "ink", "name": "Midnight Navy", "color": "#071A2B" },
-				{ "slug": "steel", "name": "Steel Blue", "color": "#174A70" },
-				{ "slug": "signal", "name": "Signal Blue", "color": "#2678B8" },
-				{ "slug": "ice", "name": "Ice", "color": "#EDF4F7" },
+				{ "slug": "steel", "name": "Deep Navy", "color": "#0C1E2C" },
+				{ "slug": "signal", "name": "Antique Bronze", "color": "#8F7A4E" },
+				{ "slug": "ice", "name": "Ivory", "color": "#F3F1EC" },
 				{ "slug": "silver", "name": "Cufflink Silver", "color": "#B8C4CC" },
 				{ "slug": "brass", "name": "Brass", "color": "#D2A84A" },
 				{ "slug": "paper", "name": "Paper", "color": "#FCFCFA" },
@@ -51,7 +51,7 @@
 				{ "slug": "medium", "name": "Medium", "size": "1.05rem" },
 				{ "slug": "large", "name": "Large", "size": "clamp(1.2rem, 2vw, 1.5rem)" },
 				{ "slug": "x-large", "name": "Extra Large", "size": "clamp(2rem, 4vw, 3.5rem)" },
-				{ "slug": "hero", "name": "Hero", "size": "clamp(3.25rem, 8vw, 6.8rem)" }
+				{ "slug": "hero", "name": "Hero", "size": "clamp(2.35rem, 4.2vw, 3.75rem)" }
 			]
 		}
 	},
@@ -101,7 +101,7 @@
 			},
 			"link": {
 				"color": {
-					"text": "var:preset|color|signal"
+					"text": "var:preset|color|ink"
 				}
 			}
 		}
